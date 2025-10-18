@@ -4,7 +4,7 @@ const { DB_HOST, DB_NAME, DB_PASSWORD, DB_USER } = require('./config.js');
 
 const connection = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
     host: DB_HOST,
-    dialect: 'mariadb', // o 'mysql' según tu caso
+    dialect: 'mysql', // o 'mysql' según tu caso
 });
 
 connection.authenticate()
